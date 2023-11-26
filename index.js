@@ -3,7 +3,7 @@ const express = require('express')
 var cors = require('cors') 
 const app = express()
 const port =3000;
-const mongoURI = 'mongodb://127.0.0.1:27017/latestdb';
+const mongoURI = 'mongodb+srv://nagursharifsd:sharif2244@cluster0.7znl75x.mongodb.net/?retryWrites=true&w=majority';
 async function connectToMongo() {
   try {
     await mongoose.connect(mongoURI);
