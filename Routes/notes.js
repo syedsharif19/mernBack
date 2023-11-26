@@ -1,5 +1,5 @@
 const express = require('express');
-var fetchuser = require('../middleware/fetchuser');
+var fetchuser = require('../Middleware/fetchuser');
 const router = express.Router();
 const Note = require('../modules/Notes');
 const { body, validationResult } = require('express-validator');
