@@ -3,6 +3,7 @@ const express = require('express')
 var cors = require('cors') 
 const app = express()
 const port =3000;
+app.use(cors())
 const mongoURI = 'mongodb+srv://nagursharifsd:sharif2244@cluster0.7znl75x.mongodb.net/?retryWrites=true&w=majority';
 async function connectToMongo() {
   try {
@@ -15,7 +16,7 @@ async function connectToMongo() {
 app.get('/', (req, res) => {
     res.send('Hello World!')
   })
-  app.use(cors())
+
 app.use(express.json())
 
 // Available Routes
